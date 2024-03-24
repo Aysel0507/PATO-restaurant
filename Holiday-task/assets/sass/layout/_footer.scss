@@ -1,0 +1,54 @@
+footer {
+    background-color: #333333;
+}
+
+.footer_{
+    
+    div {
+        span {
+            color: $primary-color;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        a {
+            font-size: 14px;
+            color: $red-color;
+        }
+    }
+
+    h4 {
+        font-size: 25px;
+        font-weight: 300;
+        font-family: $font-family1;
+        color: $primary-color;
+        line-height: 3;
+    }
+
+    ul {
+        li {
+            color: $footer-color;
+            line-height: 1.7;
+            font-size: 14px;
+
+            a {
+                color: $red-color;
+            }
+        }
+    }
+
+}
+.end_footer{
+    background-color: #222222;
+    z-index:3;
+    width:100%;
+    height:70px;
+    .end{
+        padding-top: 20px;
+        @include display-flex(space-between,center);
+
+    }
+}

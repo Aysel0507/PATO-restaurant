@@ -1,0 +1,149 @@
+.sect2_about{
+    background-image: url(/assets/images/pattern1.png.webp);
+    background-repeat: repeat;
+}  
+  
+  
+  .story{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    h4{
+        font-family: $font-family2;
+        color:$red-color;
+        font-size: 20px;
+    }
+    h3{
+        font-family: $font-family1;
+        color: $head-color;
+        font-size: 40px;
+        font-weight: 800;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        letter-spacing: 8px;
+    }
+    p{
+        color: $paragraph_color;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+  }
+
+
+
+  .sect3_about{
+    background-image: url(/assets/images/header-menu-01.jpg\ \(1\).webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom:220px;
+    background-attachment: fixed;    
+}
+
+.video_about{
+    text-align: center;
+    span{
+        color: $red-color;
+        font-size: 20px;
+        font-family: $font-family2;
+    }
+    h3{
+        color:$primary-color;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 2;
+        font-family: $font-family1;
+    }
+    button{
+        border-radius: 50%;
+        background-color:$primary-color;
+        height: 80px;
+        width: 70px;
+        cursor: pointer;
+        
+        &:hover{
+            background-color: $red-color;
+            color:$primary-color;
+
+        }
+    }
+}
+
+.sect4_abouttt{
+    background-image: url(/assets/images/pattern1.png.webp);
+    background-repeat: repeat; 
+}
+
+.about{
+    padding-top: 70px;
+    padding-bottom:5px;
+    text-align: center;
+    h4{
+        color: $red-color;
+        font-size: 20px;
+        font-family: $font-family2;
+    }
+    h3{
+        font-family: $font-family1;
+        color: $head-color;
+        font-size: 40px;
+        font-weight: 800;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        letter-spacing: 8px; 
+    }
+    p{
+        color: $paragraph_color;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
+
+.img_about1{
+    img{
+        width:300px;
+        height:300px;
+        transition: all 0.6s;
+        border-radius: 30px;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    
+}
+
+.about2{
+    padding-top:5px;
+    padding-bottom:80px;
+    text-align: center;
+    h4{
+        color: $red-color;
+        font-size: 20px;
+        font-family: $font-family2;
+    }
+    h3{
+        font-family: $font-family1;
+        color: $head-color;
+        font-size: 40px;
+        font-weight: 800;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        letter-spacing: 8px; 
+    }
+    p{
+        color: $paragraph_color;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
+
+.sect5_about{
+    background-image: url(/assets/images/bg-cover-video-02.jpg\ \(1\).webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 180px;
+    padding-bottom:220px;
+    background-attachment: fixed;
+}

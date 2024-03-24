@@ -1,0 +1,46 @@
+.sect2_reserv{
+    background-image: url(/assets/images/pattern1.png.webp);
+    background-repeat: repeat;
+}
+
+.book{
+    text-align: center;
+    padding-top: 100px;
+    h4{
+      font-family: $font-family2;
+      color: $red-color;
+      font-size: 22px;  
+    }
+    h3{
+        font-size: 40px;
+        font-weight: 800;
+        font-family: $font-family1;
+        letter-spacing: 4px;
+        line-height: 1.7;
+        color: $head-color;
+    }
+}
+
+
+
+.reserv{
+    h3{
+        font-size: 20px;
+        font-family: $font-family1;
+        letter-spacing: 1.7;
+        line-height: 4;
+        color: $head-color;
+
+
+    }
+    p{
+        color:$paragraph_color;
+        font-size: 14px;
+        line-height: 1.3;
+        a{
+            color: $red-color;
+        }
+    }
+    
+}
+
