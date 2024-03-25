@@ -2,12 +2,14 @@
     padding-top: 160px;
     padding-bottom: 150px;
     display: flex;
-    gap: 200px;
+    gap:70px;
     flex-direction: row;
+    justify-content:center;
+    align-items: center;
 }
 
 .sect2{
-    background-image: url(/assets/images/pattern1.png.webp);
+    background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
     background-repeat: repeat;
 }
 
@@ -58,7 +60,7 @@
 }
 
 .sect3 {
-    background-image: url(/assets/images/bg-intro-01.jpg.webp);
+    background-image: url(/Holiday-task/assets/images/bg-intro-01.jpg.webp);
     height: 100%;
     padding-bottom: 150px;
     padding-top: 120px;
@@ -87,19 +89,21 @@
         letter-spacing: 5px;
     }
 }
-.sect4{
-    @include display-flex(center,center);
-   width:20%;
-//    gap:0px;
-//    padding:0px 100px;
-//    margin:0px;
+// .sect4{
+//     @include display-flex(center,center);
+//     width:20%;
+// }
+.row_{
+    @include display-flex(space-between,center);
+    padding-top: 180px;
+    padding-bottom: 150px;
+   
 }
 
 .sec4{
-    
-//    margin:0px;
     img {
-        width: 250px;
+        width: 280px;
+
       
     }
 
@@ -110,8 +114,6 @@
         cursor: pointer;
         font-size: 20px;
         transition: all 0.4s;
-        // width:100%;
-
         &:hover {
             color: $red-color;
         }
@@ -121,12 +123,11 @@
         font-size: 20px;
         color: $paragraph_color;
         line-height: 1.7;
-        // width:100%;
-    }
+        }
 
     a{
         font-size: 20px;
-        // width:100%;
+
 
         &:hover {
             color: $red-color;
@@ -135,7 +136,7 @@
 }
 
 .sect6 {
-    background-image: url(/assets/images/bg-event-02.jpg.webp);
+    background-image: url(/Holiday-task/assets/images/bg-event-02.jpg.webp);
     padding-top: 140px;
     padding-bottom: 170px;
     margin-top: 200px;
@@ -162,19 +163,25 @@
 }
 
 .over_img{
-    background-image: url(/assets/images/event-06.jpg.webp);
+    background-image: url(/Holiday-task/assets/images/event-06.jpg.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1;
-    width: 100%;
-    height:300px;
+    height: 300px;
+    
+
+}
+.over_div{
+    a{
+        width: 50%;
+       
+    }
 }
 .over_div{
     display:flex;
     flex-direction: row;
     justify-content: center;
-    // width: 70%;
+    // width: 100%;
 }
 
 
@@ -193,6 +200,14 @@
         color:$paragraph_color;
         line-height: 1.3;
     }
+    a{
+        color:$paragraph_color;
+        transition: .4s;
+        &:hover{
+            color: $red-color;
+        }
+    }
+    
 }
 
 .numb{
@@ -201,6 +216,7 @@
     line-height: 1.1;
     letter-spacing: 2px;
     color:$red-color;
+    
 }
 .txt{
     font-weight: 700;
@@ -212,11 +228,13 @@
 .dattte{
     background-color:rgba(255, 0, 0, 0.501);
     color: $primary-color;
+    display: flex;
+    flex-direction:row;
     
 }
 
 .sect9 {
-    background-image: url(/assets/images/bg-cover-video-02.jpg.webp);
+    background-image: url(/Holiday-task/assets/images/bg-cover-video-02.jpg.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -256,10 +274,15 @@
         }
     }
 }
-
+.upcoming{
+    padding-top: 50px;
+    @include display-flex(space-around,center);
+    flex-direction: row;
+    margin-bottom: 50px;
+}
 
 .sect7{
-    background-image: url(/assets/images/pattern1.png.webp);
+    background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
     background-repeat: repeat;
 }
 
@@ -310,8 +333,8 @@
 
 .image_book_table {
     img {
-        width: 200px;
-        height: 200px;
+        width: 350px;
+        height: 350px;
     }
 }
 
@@ -411,6 +434,11 @@
     }
 }
 
+.sect10{
+    width:20%;
+    @include display-flex(center,center);
+}
+
 .latest{
     text-align: center;
     padding-top: 120px; 
@@ -429,7 +457,7 @@
 }
 
 .sect11 {
-    background-image: url(/assets/images/pattern1.png.webp);
+    background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
     background-repeat: repeat;
     margin-top: 180px;
     padding-top: 100px;

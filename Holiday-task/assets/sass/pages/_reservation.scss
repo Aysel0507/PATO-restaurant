@@ -1,5 +1,5 @@
 .sect2_reserv{
-    background-image: url(/assets/images/pattern1.png.webp);
+    background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
     background-repeat: repeat;
 }
 
@@ -44,3 +44,84 @@
     
 }
 
+.form_reserv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    margin: 20px;
+}
+.name{
+    width: 230px;
+    height:40px;
+    .namee{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+.date{
+    width: 230px;
+    height:40px;
+    margin-bottom:40px;
+    .datee{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.time{
+    width: 230px;
+    height:40px;
+    border: 1px solid  #d9d9d9;
+    border-radius: 6px;
+    margin-bottom:40px;
+
+}
+
+.phone{
+    width: 230px;
+    height:40px;
+    .phonee{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.people{
+    width: 230px;
+    height:40px;
+    border: 1px solid  #d9d9d9;
+    border-radius: 6px;
+    margin-bottom:40px;
+    
+    
+}
+
+.email{
+    width: 230px;
+    height:40px;
+    .emaill{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.book_btnn{
+    @include display-flex(center,center);
+    button{
+        width: 150px;
+        height: 35px;
+        margin-top: 40px;
+        color: $primary-color;
+        background-color: black;
+        border-radius: 8px;
+        transition: .4s;
+        &:hover{
+            cursor: pointer;
+            background-color: $red-color;
+            border: none;
+        }
+    }
+}

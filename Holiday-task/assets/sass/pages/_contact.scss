@@ -1,0 +1,106 @@
+.sect2_contact{
+    background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
+    background-repeat: repeat;
+    padding-top: 130px;
+    .map{
+        position: relative;
+        iframe{
+            width: 100%;
+        }
+
+    }
+    .iframe-hover{
+        background-color: rgba(0,0,0,0.5);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    
+}
+.sect3_contact{
+    background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
+    background-repeat: repeat;
+}
+.send{
+    h4{
+        font-family: $font-family1;
+        font-size: 22px;
+        letter-spacing: 3px;
+        text-align: center;
+        padding-top: 120px;
+        font-weight: 600;
+
+
+    }
+}
+.form_cont{
+    @include display-flex(center,center);
+    gap:50px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    .cont{
+        border-radius: 10px;
+        span{
+            color:$head-color;
+            letter-spacing:1.1px;
+            font-family:$font-family3;
+        }
+    }
+} 
+.send_submit{
+    padding-top: 40px;
+    padding-bottom: 100px;
+    text-align: center;
+    button{
+        height: 40px;
+        width: 120px;
+        border-radius: 10px;
+        background-color: $secondary-color;
+        color: $primary-color;
+        font-family: $font-family1;
+        transition: .4s;
+        border: none;
+        &:hover{
+            cursor: pointer;
+            background-color: $red-color;
+            border: none;
+
+    }
+    }
+    
+}
+
+.sect4_contact{
+    background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
+    background-repeat: repeat;
+}
+.row-contact{
+    @include display-flex(space-between,center);
+
+    .col-4_contact{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        display: flex;
+        gap:23px;
+        h3{
+            font-family: $font-family1;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            color: $head-color;
+        }
+        i{
+            font-size: 20px;
+        }
+        p{
+            color: $paragraph_color;
+            line-height: 1.1;
+            font-family: $font-family3;
+            font-size: 14px;
+
+        }
+}
+}

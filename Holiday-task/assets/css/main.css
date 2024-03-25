@@ -140,7 +140,7 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
 }
 @media screen and (max-width: 1200px) {
   .container {
@@ -159,7 +159,7 @@ body {
 }
 
 header {
-  background-image: url("/assets/images/slide1-01.jpg.webp");
+  background-image: url("/Holiday-task/assets/images/slide1-01.jpg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -330,12 +330,14 @@ footer {
   padding-top: 160px;
   padding-bottom: 150px;
   display: flex;
-  gap: 200px;
+  gap: 70px;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .sect2 {
-  background-image: url(/assets/images/pattern1.png.webp);
+  background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
   background-repeat: repeat;
 }
 
@@ -378,7 +380,7 @@ footer {
 }
 
 .sect3 {
-  background-image: url(/assets/images/bg-intro-01.jpg.webp);
+  background-image: url(/Holiday-task/assets/images/bg-intro-01.jpg.webp);
   height: 100%;
   padding-bottom: 150px;
   padding-top: 120px;
@@ -406,15 +408,16 @@ footer {
   letter-spacing: 5px;
 }
 
-.sect4 {
+.row_ {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 20%;
+  padding-top: 180px;
+  padding-bottom: 150px;
 }
 
 .sec4 img {
-  width: 250px;
+  width: 280px;
 }
 .sec4 h3 {
   font-family: "Poppins";
@@ -440,7 +443,7 @@ footer {
 }
 
 .sect6 {
-  background-image: url(/assets/images/bg-event-02.jpg.webp);
+  background-image: url(/Holiday-task/assets/images/bg-event-02.jpg.webp);
   padding-top: 140px;
   padding-bottom: 170px;
   margin-top: 200px;
@@ -466,13 +469,15 @@ footer {
 }
 
 .over_img {
-  background-image: url(/assets/images/event-06.jpg.webp);
+  background-image: url(/Holiday-task/assets/images/event-06.jpg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 1;
-  width: 100%;
   height: 300px;
+}
+
+.over_div a {
+  width: 50%;
 }
 
 .over_div {
@@ -497,6 +502,13 @@ footer {
   color: #666666;
   line-height: 1.3;
 }
+.over_parag a {
+  color: #666666;
+  transition: 0.4s;
+}
+.over_parag a:hover {
+  color: red;
+}
 
 .numb {
   font-weight: 700;
@@ -516,10 +528,12 @@ footer {
 .dattte {
   background-color: rgba(255, 0, 0, 0.501);
   color: white;
+  display: flex;
+  flex-direction: row;
 }
 
 .sect9 {
-  background-image: url(/assets/images/bg-cover-video-02.jpg.webp);
+  background-image: url(/Holiday-task/assets/images/bg-cover-video-02.jpg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -555,8 +569,17 @@ footer {
   color: white;
 }
 
+.upcoming {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
 .sect7 {
-  background-image: url(/assets/images/pattern1.png.webp);
+  background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
   background-repeat: repeat;
 }
 
@@ -602,8 +625,8 @@ input ::placeholder {
 }
 
 .image_book_table img {
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 350px;
 }
 
 .star {
@@ -696,6 +719,13 @@ input ::placeholder {
   height: 28px;
 }
 
+.sect10 {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .latest {
   text-align: center;
   padding-top: 120px;
@@ -714,7 +744,7 @@ input ::placeholder {
 }
 
 .sect11 {
-  background-image: url(/assets/images/pattern1.png.webp);
+  background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
   background-repeat: repeat;
   margin-top: 180px;
   padding-top: 100px;
@@ -722,15 +752,18 @@ input ::placeholder {
 }
 
 .sect3_menu {
-  background-image: url(/assets/images/header-menu-01.jpg.webp);
+  background-image: url(/Holiday-task/assets/images/header-menu-01.jpg.webp);
   height: 100%;
-  margin-top: 200px;
-  padding-bottom: 120px;
-  padding-top: 90px;
+  padding-bottom: 200px;
+  padding-top: 160px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.sect2_menu {
+  background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
 }
 
 .lunch {
@@ -743,11 +776,11 @@ input ::placeholder {
 }
 
 .sect5_menu {
-  background-image: url(/assets/images/header-menu-02.jpg.webp);
+  background-image: url(/Holiday-task/assets/images/header-menu-02.jpg.webp);
   height: 100%;
-  margin-top: 200px;
-  padding-bottom: 120px;
-  padding-top: 90px;
+  margin-top: 100px;
+  padding-bottom: 200px;
+  padding-top: 160px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -763,8 +796,95 @@ input ::placeholder {
   letter-spacing: 5px;
 }
 
+.row_menu {
+  padding-top: 100px;
+  padding-bottom: 140px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.row_menu .col-6-menu {
+  background-image: url(https://preview.colorlib.com/theme/pato/images/icons/pattern3.png);
+  background-repeat: no-repeat;
+}
+.row_menu .col-6-menu h3 {
+  font-family: "Poppins";
+  font-size: 25px;
+  font-weight: 600;
+  color: #222222;
+  letter-spacing: 5px;
+  line-height: 4;
+}
+.row_menu .col-6-menu a {
+  line-height: 1.7;
+  color: #666666;
+  letter-spacing: 2px;
+}
+.row_menu .col-6-menu p {
+  line-height: 1.7;
+  color: #666666;
+}
+.row_menu .col-6-menu span {
+  color: #666666;
+  font-size: 25px;
+}
+
+.pine {
+  margin-top: 25px;
+}
+
+.row-lunch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.l_img {
+  overflow: hidden;
+}
+
+.col-6-lunch {
+  margin-top: 100px;
+}
+.col-6-lunch img {
+  width: 160px;
+  height: 120px;
+  transition: 0.4s;
+}
+.col-6-lunch img:hover {
+  transform: scale(1.1);
+}
+.col-6-lunch .lunch_ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 30px;
+  gap: 22px;
+}
+.col-6-lunch h4 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #666666;
+}
+.col-6-lunch h4:hover {
+  cursor: pointer;
+  color: red;
+}
+.col-6-lunch p {
+  font-size: 15px;
+  line-height: 2;
+  color: #666666;
+}
+.col-6-lunch span {
+  font-size: 25px;
+  line-height: 2;
+  color: #666666;
+}
+
 .sect2_reserv {
-  background-image: url(/assets/images/pattern1.png.webp);
+  background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
   background-repeat: repeat;
 }
 
@@ -800,6 +920,160 @@ input ::placeholder {
 }
 .reserv p a {
   color: red;
+}
+
+.form_reserv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  margin: 20px;
+}
+
+.name {
+  width: 230px;
+  height: 40px;
+}
+.name .namee {
+  width: 100%;
+  height: 100%;
+}
+
+.date {
+  width: 230px;
+  height: 40px;
+  margin-bottom: 40px;
+}
+.date .datee {
+  width: 100%;
+  height: 100%;
+}
+
+.time {
+  width: 230px;
+  height: 40px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  margin-bottom: 40px;
+}
+
+.phone {
+  width: 230px;
+  height: 40px;
+}
+.phone .phonee {
+  width: 100%;
+  height: 100%;
+}
+
+.people {
+  width: 230px;
+  height: 40px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  margin-bottom: 40px;
+}
+
+.email {
+  width: 230px;
+  height: 40px;
+}
+.email .emaill {
+  width: 100%;
+  height: 100%;
+}
+
+.book_btnn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book_btnn button {
+  width: 150px;
+  height: 35px;
+  margin-top: 40px;
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+.book_btnn button:hover {
+  cursor: pointer;
+  background-color: red;
+  border: none;
+}
+
+.gallery_btn {
+  text-align: center;
+}
+.gallery_btn button {
+  color: black;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+.gallery_btn button:first-child {
+  background-color: black;
+  color: white;
+}
+.gallery_btn button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.sect2_gallery {
+  padding-top: 200px;
+}
+
+.gallery_img {
+  margin-top: 100px;
+}
+
+.row-g {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.col-4-g {
+  overflow: hidden;
+}
+.col-4-g img {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+.col-4-g img:hover {
+  cursor: pointer;
+  color: rgba(233, 120, 120, 0.37);
+  transform: scale(1.1);
+}
+
+.gallery_circ_btn {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.gallery_circ_btn button {
+  color: black;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+}
+.gallery_circ_btn button:first-child {
+  background-color: black;
+  color: white;
+}
+.gallery_circ_btn button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 .sect2_about {
@@ -942,4 +1216,110 @@ input ::placeholder {
   padding-top: 180px;
   padding-bottom: 220px;
   background-attachment: fixed;
+}
+
+.sect2_contact {
+  background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
+  background-repeat: repeat;
+  padding-top: 130px;
+}
+.sect2_contact .map {
+  position: relative;
+}
+.sect2_contact .map iframe {
+  width: 100%;
+}
+.sect2_contact .iframe-hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.sect3_contact {
+  background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
+  background-repeat: repeat;
+}
+
+.send h4 {
+  font-family: "Poppins";
+  font-size: 22px;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-top: 120px;
+  font-weight: 600;
+}
+
+.form_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.form_cont .cont {
+  border-radius: 10px;
+}
+.form_cont .cont span {
+  color: #222222;
+  letter-spacing: 1.1px;
+  font-family: "Montserrat";
+}
+
+.send_submit {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.send_submit button {
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-family: "Poppins";
+  transition: 0.4s;
+  border: none;
+}
+.send_submit button:hover {
+  cursor: pointer;
+  background-color: red;
+  border: none;
+}
+
+.sect4_contact {
+  background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
+  background-repeat: repeat;
+}
+
+.row-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row-contact .col-4_contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  gap: 23px;
+}
+.row-contact .col-4_contact h3 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #222222;
+}
+.row-contact .col-4_contact i {
+  font-size: 20px;
+}
+.row-contact .col-4_contact p {
+  color: #666666;
+  line-height: 1.1;
+  font-family: "Montserrat";
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,13 +1,16 @@
 .sect3_menu{
-    background-image:url(/assets/images/header-menu-01.jpg.webp);
+    background-image:url(/Holiday-task/assets/images/header-menu-01.jpg.webp);
     height:100%;
-    margin-top:200px;
-    padding-bottom: 120px;
-    padding-top: 90px;
+    padding-bottom: 200px;
+    padding-top:160px;
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.sect2_menu{
+    background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
 }
 
 .lunch{
@@ -20,11 +23,11 @@
 }
 
 .sect5_menu{
-    background-image:url(/assets/images/header-menu-02.jpg.webp);
+    background-image:url(/Holiday-task/assets/images/header-menu-02.jpg.webp);
     height:100%;
-    margin-top:200px;
-    padding-bottom: 120px;
-    padding-top: 90px;
+    margin-top:100px;
+    padding-bottom: 200px;
+    padding-top:160px;
     background-position: center;
     background-repeat:no-repeat;
     background-size: cover;
@@ -40,3 +43,88 @@
     letter-spacing:5px;
 }
 
+.row_menu{
+    padding-top:100px;
+    padding-bottom: 140px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    .col-6-menu{
+        background-image: url(https://preview.colorlib.com/theme/pato/images/icons/pattern3.png);
+        background-repeat:no-repeat;
+        h3{
+            font-family: $font-family1;
+            font-size: 25px;
+            font-weight: 600;
+            color:$head-color;
+            letter-spacing: 5px;
+            line-height:4;
+        }
+        a{
+            line-height: 1.7;
+            color:$paragraph_color;
+            letter-spacing: 2px;
+        }
+        p{
+            line-height: 1.7;
+            color:$paragraph_color;
+        }
+        span{
+            color:$paragraph_color;
+            font-size: 25px;
+        }
+    }
+}
+
+.pine{
+    margin-top:25px;
+}
+
+.row-lunch{
+    @include display-flex(space-between,center);
+    flex-direction: row;
+    
+}
+
+
+.l_img{
+    overflow: hidden;
+}
+
+.col-6-lunch{
+    margin-top: 100px;
+    img{
+        width:160px ;
+        height: 120px;
+        transition: .4s;
+        // border-radius: 15px;
+        &:hover{
+            transform:scale(1.1);
+        }
+    }
+    .lunch_{
+        @include display-flex(space-between,center);
+        flex-direction: row;
+        margin-top: 30px;
+        gap:22px;
+    }
+    h4{
+        font-size: 20px;
+        letter-spacing: 3px;
+        color:$paragraph_color;
+        &:hover{
+            cursor: pointer;
+            color:$red-color;
+        }
+    }
+    p{
+        font-size: 15px;
+        line-height: 2;
+        color:$paragraph_color;
+    }
+    span{
+        font-size: 25px;
+        line-height: 2;
+        color: $paragraph_color;
+    }
+}
