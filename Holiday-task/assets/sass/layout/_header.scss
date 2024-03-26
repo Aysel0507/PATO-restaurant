@@ -4,6 +4,14 @@ header{
     z-index: 999;
     border-top: 3px solid red;
     background-color: white;
+    .logo{
+        a{
+            img{
+                width: 100px;
+                height: 50px;
+            }
+        }
+    }
 }
 
 .navbar{
@@ -19,7 +27,7 @@ nav{
         li{
             a{
             color:$head-color;
-            font-size: 15px;
+            font-size: 14px;
             font-family: $font-family3;
             transition: .6s;
             &:hover{

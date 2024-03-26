@@ -8,3 +8,21 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.page_header{
+    text-align: center;
+    font-family: $font-family1;
+    color: $primary-color;
+    font-size: 35px;
+    font-weight: 600;
+    padding-top: 250px;
+    letter-spacing: 3px;
+}
+.lunch-dinner{
+    text-align: center;
+    font-family: $font-family1;
+    color:$primary-color;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing:5px;
+}

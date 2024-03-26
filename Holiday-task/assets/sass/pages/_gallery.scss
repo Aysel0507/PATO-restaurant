@@ -1,3 +1,14 @@
+.sect1-gallery{
+    background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-02.jpg);
+    @extend .background-image-functions;
+    width: 100%;
+    height: 90vh;
+    h1{
+        @extend .page_header;
+    }
+}
+
+
 .gallery_btn{
     text-align: center;
     button{
@@ -6,8 +17,10 @@
         color: $primary-color;
     }
     color:$secondary-color;
-    width: 100px;
-    height: 30px;
+    width: 90px;
+    font-family: $font-family1;
+    font-size: 10px;
+    height: 20px;
     border: none;
     border-radius: 10px;
     &:hover{
@@ -19,23 +32,23 @@
 
 }
 .sect2_gallery{
-    padding-top: 200px;
+    padding-top: 90px;
 }
 .gallery_img{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .row-g{
-    padding-top: 30px;
+    padding-top: 20px;
     @include display-flex(space-around,center);
     flex-direction: row;
 }
 .col-4-g{
     overflow: hidden;
     img{
-        width: 400px;
-        height: 300px;
-        border-radius: 20px;
+        width: 330px;
+        height: 250px;
+        border-radius: 10px;
         transition: .4s;
         &:hover{
             cursor: pointer;
@@ -50,19 +63,21 @@
 .gallery_circ_btn{
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     button{
         &:first-child{
-            background-color: $secondary-color;
+            background-color: $head-color;
             color: $primary-color;
         }
-        color:$secondary-color;
-        width: 30px;
-        height: 30px;
+        color:$head-color;
+        width: 25px;
+        height: 25px;
+        font-size: 9px;
+        font-family: $font-family1;
         border: none;
         border-radius: 50%;
         &:hover{
-            background-color:$secondary-color;
+            background-color:$head-color;
             color: $primary-color;
             cursor: pointer;
     }

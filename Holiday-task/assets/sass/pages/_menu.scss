@@ -1,11 +1,19 @@
+.sect1_menu{
+    background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-01.jpg);
+    @extend .background-image-functions;
+    height: 90vh;
+    width: 100%;
+    h1{
+        @extend .page_header;
+}
+}
+
 .sect3_menu{
     background-image:url(/Holiday-task/assets/images/header-menu-01.jpg.webp);
     height:100%;
     padding-bottom: 200px;
     padding-top:160px;
-    background-position: center;
-    background-repeat:no-repeat;
-    background-size: cover;
+    @extend .background-image-functions;
     background-attachment: fixed;
 }
 
@@ -14,12 +22,7 @@
 }
 
 .lunch{
-    text-align: center;
-    font-family: $font-family1;
-    color:$primary-color;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing:5px;
+    @extend .lunch-dinner;
 }
 
 .sect5_menu{
@@ -28,33 +31,24 @@
     margin-top:100px;
     padding-bottom: 200px;
     padding-top:160px;
-    background-position: center;
-    background-repeat:no-repeat;
-    background-size: cover;
+    @extend .background-image-functions;
     background-attachment: fixed;
 } 
 
 .dinner{
-    text-align: center;
-    font-family: $font-family1;
-    color:$primary-color;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing:5px;
+    @extend .lunch-dinner;
 }
 
 .row_menu{
     padding-top:100px;
     padding-bottom: 140px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    @include display-flex(space-between,center);
     .col-6-menu{
         background-image: url(https://preview.colorlib.com/theme/pato/images/icons/pattern3.png);
         background-repeat:no-repeat;
         h3{
             font-family: $font-family1;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 600;
             color:$head-color;
             letter-spacing: 5px;
@@ -62,16 +56,20 @@
         }
         a{
             line-height: 1.7;
-            color:$paragraph_color;
+            color:$head-color;
             letter-spacing: 2px;
+            font-size: 13px;
         }
         p{
             line-height: 1.7;
             color:$paragraph_color;
+            font-size: 9px;
+            font-family: $font-family3;
         }
         span{
-            color:$paragraph_color;
-            font-size: 25px;
+            color:rgb(48, 47, 47);
+            font-size: 17px;
+            font-family: $font-family3;
         }
     }
 }
@@ -87,21 +85,23 @@
 }
 
 
-.l_img{
-    overflow: hidden;
-}
+
 
 .col-6-lunch{
     margin-top: 100px;
+    .l_img{
+        overflow: hidden;
+    
     img{
-        width:160px ;
-        height: 120px;
+        width:120px ;
+        border-radius: 10px;
+        height: 100px;
         transition: .4s;
-        // border-radius: 15px;
         &:hover{
             transform:scale(1.1);
         }
     }
+}
     .lunch_{
         @include display-flex(space-between,center);
         flex-direction: row;
@@ -109,22 +109,25 @@
         gap:22px;
     }
     h4{
-        font-size: 20px;
+        font-size: 12px;
         letter-spacing: 3px;
-        color:$paragraph_color;
+        font-family: $font-family1;
+        color:rgb(44, 43, 43);
         &:hover{
             cursor: pointer;
             color:$red-color;
         }
     }
     p{
-        font-size: 15px;
-        line-height: 2;
+        font-size: 11px;
+        margin-top: 8px ;
         color:$paragraph_color;
+        font-family: $font-family3;
     }
     span{
-        font-size: 25px;
+        font-size: 17px;
         line-height: 2;
-        color: $paragraph_color;
+        font-family: $font-family3;
+        color:rgb(44, 43, 43);
     }
 }

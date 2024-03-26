@@ -1,6 +1,12 @@
-// .sect_blog{
-//     margin-top: 200px;
-// }
+.sect1-blog{
+    background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-03.jpg);
+    @extend .background-image-functions;
+    width: 100%;
+    height: 90vh;
+    h1{
+        @extend .page_header;
+    }
+}
 .blog_home{
     padding-left: 120px;
     padding-top: 20px;
@@ -37,7 +43,6 @@
         height: 80px;
         background-color: $red-color;
         border-radius: 10px;
-        // border: 1px solid gold;
         top:70px;
         left:20px;
         @include display-flex(center,center);
@@ -58,6 +63,7 @@
             border-radius: 10px;
             width:80%;
             transition:.6s;
+            width: 100%;
             &:hover{
                 transform: scale(1.1);
             }
@@ -104,7 +110,7 @@
     @include display-flex(center,center);
     flex-direction: row;
     .col-4-blog{
-        border-left: 1px solid rgb(163, 163, 163);
+        // border-left: 1px solid rgb(163, 163, 163);
         padding-left:90px;
     }
 }

@@ -1,7 +1,18 @@
+.sect1-reserv{
+    background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-02.jpg) ;
+    @extend .background-image-functions;
+    width: 100%;
+    height: 90vh;
+    h1{
+        @extend .page_header;
+    }
+}
+
 .sect2_reserv{
     background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
     background-repeat: repeat;
 }
+
 
 .book{
     text-align: center;
@@ -45,11 +56,14 @@
 }
 
 .form_reserv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-flex(center,center);
     gap: 45px;
     margin: 20px;
+    span{
+        font-size: 13px;
+        font-family: $font-family1;
+        color: $head-color;
+    }
 }
 .name{
     width: 230px;
@@ -57,6 +71,8 @@
     .namee{
         width: 100%;
         height: 100%;
+        font-size: 13px;
+        font-family: $font-family1;
     }
     
 }
@@ -67,6 +83,8 @@
     .datee{
         width: 100%;
         height: 100%;
+        font-size: 13px;
+        font-family: $font-family1;
     }
 }
 
@@ -85,6 +103,8 @@
     .phonee{
         width: 100%;
         height: 100%;
+        font-size: 13px;
+        font-family: $font-family1;
     }
 }
 
@@ -104,6 +124,8 @@
     .emaill{
         width: 100%;
         height: 100%;
+        font-size: 13px;
+        font-family: $font-family1;
     }
 }
 
@@ -112,16 +134,26 @@
     @include display-flex(center,center);
     button{
         width: 150px;
+        font-size: 13px;
+        font-family: $font-family1;
         height: 35px;
         margin-top: 40px;
         color: $primary-color;
         background-color: black;
         border-radius: 8px;
         transition: .4s;
+        border: none;
         &:hover{
             cursor: pointer;
             background-color: $red-color;
-            border: none;
         }
     }
+}
+
+.row-reserv{
+    padding-bottom: 100px;
+    padding-top: 80px;
+    @include display-flex(space-between,center);
+    flex-direction: row;
+    gap:100px;
 }

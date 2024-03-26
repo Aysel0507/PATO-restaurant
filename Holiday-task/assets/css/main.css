@@ -143,15 +143,34 @@ body {
   width: 80%;
 }
 
-.background-image, .sect11, .sect7, .sect2 {
+.background-image, .sect2_contact, .sect4_abouttt, .sect2_about, .sect11, .sect7, .sect2 {
   background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
   background-repeat: repeat;
 }
 
-.background-image-functions, .sect9, .sect6, .sect1 {
+.background-image-functions, .sect1-contact, .sect1-blog, .sect5_about, .sect3_about, .sect1-about, .sect1-gallery, .sect1-reserv, .sect5_menu, .sect3_menu, .sect1_menu, .sect9, .sect6, .sect1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.page_header, .sect1-contact h1, .sect1-blog h1, .sect1-about h1, .sect1-gallery h1, .sect1-reserv h1, .sect1_menu h1 {
+  text-align: center;
+  font-family: "Poppins";
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  padding-top: 250px;
+  letter-spacing: 3px;
+}
+
+.lunch-dinner, .dinner, .lunch {
+  text-align: center;
+  font-family: "Poppins";
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 5px;
 }
 
 .button {
@@ -171,6 +190,10 @@ header {
   border-top: 3px solid red;
   background-color: white;
 }
+header .logo a img {
+  width: 100px;
+  height: 50px;
+}
 
 .navbar {
   height: 80px;
@@ -188,7 +211,7 @@ nav ul {
 }
 nav ul li a {
   color: #222222;
-  font-size: 15px;
+  font-size: 14px;
   font-family: "Montserrat";
   transition: 0.6s;
 }
@@ -213,42 +236,77 @@ footer {
   background-color: #222222;
 }
 
+.row-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer_ .twit2 {
+  padding-top: 30px;
+}
 .footer_ div span {
-  color: white;
+  color: #666666;
+  font-size: 9px;
+  font-family: "Poppins";
 }
 .footer_ div p {
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.7;
+  font-family: "Poppins";
   color: #666666;
 }
 .footer_ div a {
-  font-size: 12px;
+  font-size: 8px;
   color: #ec1d25;
+  font-family: "Poppins";
 }
 .footer_ h4 {
-  font-size: 25px;
-  font-weight: 300;
+  font-size: 13px;
+  font-weight: 500;
   font-family: "Poppins";
   color: white;
   line-height: 3;
 }
 .footer_ ul li {
   color: #999999;
-  line-height: 1.7;
-  font-size: 14px;
+  line-height: 2.5;
+  font-size: 10px;
 }
 
 .end_footer {
   background-color: #171717;
   z-index: 3;
   width: 100%;
-  height: 70px;
+  height: 50px;
 }
 .end_footer .end {
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.end_footer .end .footer_left a {
+  font-size: 12px;
+  color: white;
+  transition: 0.4s;
+}
+.end_footer .end .footer_left a:hover {
+  color: #ec1d25;
+}
+.end_footer .end .footer_right {
+  font-size: 10px;
+  color: #666666;
+  font-family: "Poppins";
+}
+.end_footer .end .footer_right a {
+  font-size: 10px;
+  color: rgb(179, 178, 178);
+  transition: 0.4s;
+}
+.end_footer .end .footer_right a:hover {
+  color: #ec1d25;
 }
 
 .sect1 {
@@ -769,28 +827,21 @@ footer {
   padding-bottom: 120px;
 }
 
+.sect1_menu {
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-01.jpg);
+  height: 90vh;
+  width: 100%;
+}
 .sect3_menu {
   background-image: url(/Holiday-task/assets/images/header-menu-01.jpg.webp);
   height: 100%;
   padding-bottom: 200px;
   padding-top: 160px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
 }
 
 .sect2_menu {
   background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
-}
-
-.lunch {
-  text-align: center;
-  font-family: "Poppins";
-  color: white;
-  font-size: 50px;
-  font-weight: 700;
-  letter-spacing: 5px;
 }
 
 .sect5_menu {
@@ -799,19 +850,7 @@ footer {
   margin-top: 100px;
   padding-bottom: 200px;
   padding-top: 160px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
-}
-
-.dinner {
-  text-align: center;
-  font-family: "Poppins";
-  color: white;
-  font-size: 50px;
-  font-weight: 700;
-  letter-spacing: 5px;
 }
 
 .row_menu {
@@ -819,7 +858,7 @@ footer {
   padding-bottom: 140px;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  align-items: center;
 }
 .row_menu .col-6-menu {
   background-image: url(https://preview.colorlib.com/theme/pato/images/icons/pattern3.png);
@@ -827,7 +866,7 @@ footer {
 }
 .row_menu .col-6-menu h3 {
   font-family: "Poppins";
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   color: #222222;
   letter-spacing: 5px;
@@ -835,16 +874,20 @@ footer {
 }
 .row_menu .col-6-menu a {
   line-height: 1.7;
-  color: #666666;
+  color: #222222;
   letter-spacing: 2px;
+  font-size: 13px;
 }
 .row_menu .col-6-menu p {
   line-height: 1.7;
   color: #666666;
+  font-size: 9px;
+  font-family: "Montserrat";
 }
 .row_menu .col-6-menu span {
-  color: #666666;
-  font-size: 25px;
+  color: rgb(48, 47, 47);
+  font-size: 17px;
+  font-family: "Montserrat";
 }
 
 .pine {
@@ -858,19 +901,19 @@ footer {
   flex-direction: row;
 }
 
-.l_img {
-  overflow: hidden;
-}
-
 .col-6-lunch {
   margin-top: 100px;
 }
-.col-6-lunch img {
-  width: 160px;
-  height: 120px;
+.col-6-lunch .l_img {
+  overflow: hidden;
+}
+.col-6-lunch .l_img img {
+  width: 120px;
+  border-radius: 10px;
+  height: 100px;
   transition: 0.4s;
 }
-.col-6-lunch img:hover {
+.col-6-lunch .l_img img:hover {
   transform: scale(1.1);
 }
 .col-6-lunch .lunch_ {
@@ -882,25 +925,33 @@ footer {
   gap: 22px;
 }
 .col-6-lunch h4 {
-  font-size: 20px;
+  font-size: 12px;
   letter-spacing: 3px;
-  color: #666666;
+  font-family: "Poppins";
+  color: rgb(44, 43, 43);
 }
 .col-6-lunch h4:hover {
   cursor: pointer;
   color: #ec1d25;
 }
 .col-6-lunch p {
-  font-size: 15px;
-  line-height: 2;
+  font-size: 11px;
+  margin-top: 8px;
   color: #666666;
+  font-family: "Montserrat";
 }
 .col-6-lunch span {
-  font-size: 25px;
+  font-size: 17px;
   line-height: 2;
-  color: #666666;
+  font-family: "Montserrat";
+  color: rgb(44, 43, 43);
 }
 
+.sect1-reserv {
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-02.jpg);
+  width: 100%;
+  height: 90vh;
+}
 .sect2_reserv {
   background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
   background-repeat: repeat;
@@ -947,6 +998,11 @@ footer {
   gap: 45px;
   margin: 20px;
 }
+.form_reserv span {
+  font-size: 13px;
+  font-family: "Poppins";
+  color: #222222;
+}
 
 .name {
   width: 230px;
@@ -955,6 +1011,8 @@ footer {
 .name .namee {
   width: 100%;
   height: 100%;
+  font-size: 13px;
+  font-family: "Poppins";
 }
 
 .date {
@@ -965,6 +1023,8 @@ footer {
 .date .datee {
   width: 100%;
   height: 100%;
+  font-size: 13px;
+  font-family: "Poppins";
 }
 
 .time {
@@ -982,6 +1042,8 @@ footer {
 .phone .phonee {
   width: 100%;
   height: 100%;
+  font-size: 13px;
+  font-family: "Poppins";
 }
 
 .people {
@@ -999,6 +1061,8 @@ footer {
 .email .emaill {
   width: 100%;
   height: 100%;
+  font-size: 13px;
+  font-family: "Poppins";
 }
 
 .book_btnn {
@@ -1008,26 +1072,45 @@ footer {
 }
 .book_btnn button {
   width: 150px;
+  font-size: 13px;
+  font-family: "Poppins";
   height: 35px;
   margin-top: 40px;
   color: white;
   background-color: black;
   border-radius: 8px;
   transition: 0.4s;
+  border: none;
 }
 .book_btnn button:hover {
   cursor: pointer;
   background-color: #ec1d25;
-  border: none;
 }
 
+.row-reserv {
+  padding-bottom: 100px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.sect1-gallery {
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-02.jpg);
+  width: 100%;
+  height: 90vh;
+}
 .gallery_btn {
   text-align: center;
 }
 .gallery_btn button {
   color: black;
-  width: 100px;
-  height: 30px;
+  width: 90px;
+  font-family: "Poppins";
+  font-size: 10px;
+  height: 20px;
   border: none;
   border-radius: 10px;
 }
@@ -1042,15 +1125,15 @@ footer {
 }
 
 .sect2_gallery {
-  padding-top: 200px;
+  padding-top: 90px;
 }
 
 .gallery_img {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .row-g {
-  padding-top: 30px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1061,9 +1144,9 @@ footer {
   overflow: hidden;
 }
 .col-4-g img {
-  width: 400px;
-  height: 300px;
-  border-radius: 20px;
+  width: 330px;
+  height: 250px;
+  border-radius: 10px;
   transition: 0.4s;
 }
 .col-4-g img:hover {
@@ -1075,30 +1158,32 @@ footer {
 .gallery_circ_btn {
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .gallery_circ_btn button {
-  color: black;
-  width: 30px;
-  height: 30px;
+  color: #222222;
+  width: 25px;
+  height: 25px;
+  font-size: 9px;
+  font-family: "Poppins";
   border: none;
   border-radius: 50%;
 }
 .gallery_circ_btn button:first-child {
-  background-color: black;
+  background-color: #222222;
   color: white;
 }
 .gallery_circ_btn button:hover {
-  background-color: black;
+  background-color: #222222;
   color: white;
   cursor: pointer;
 }
 
-.sect2_about {
-  background-image: url(/assets/images/pattern1.png.webp);
-  background-repeat: repeat;
+.sect1-about {
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-03.jpg);
+  width: 100%;
+  height: 90vh;
 }
-
 .story {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1125,10 +1210,7 @@ footer {
 }
 
 .sect3_about {
-  background-image: url(/assets/images/header-menu-01.jpg\ \(1\).webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(/Holiday-task/assets/images/header-menu-01.jpg\ \(1\).webp);
   padding-top: 180px;
   padding-bottom: 220px;
   background-attachment: fixed;
@@ -1161,9 +1243,11 @@ footer {
   color: white;
 }
 
-.sect4_abouttt {
-  background-image: url(/assets/images/pattern1.png.webp);
-  background-repeat: repeat;
+.sect4_abouttt .row-aboutt {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
 
 .about {
@@ -1191,14 +1275,21 @@ footer {
   line-height: 1.4;
 }
 
+.img_about1 {
+  overflow: hidden;
+}
 .img_about1 img {
-  width: 300px;
-  height: 300px;
-  transition: all 0.6s;
-  border-radius: 30px;
+  width: 280px;
+  height: 290px;
+  border-radius: 10px;
+  transition: 0.4s;
 }
 .img_about1 img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+
+.sect4-1_about {
+  padding-bottom: 100px;
 }
 
 .about2 {
@@ -1227,15 +1318,17 @@ footer {
 }
 
 .sect5_about {
-  background-image: url(/assets/images/bg-cover-video-02.jpg\ \(1\).webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(/Holiday-task/assets/images/bg-cover-video-02.jpg.webp);
   padding-top: 180px;
   padding-bottom: 220px;
   background-attachment: fixed;
 }
 
+.sect1-blog {
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-03.jpg);
+  width: 100%;
+  height: 90vh;
+}
 .blog_home {
   padding-left: 120px;
   padding-top: 20px;
@@ -1293,6 +1386,7 @@ footer {
   border-radius: 10px;
   width: 80%;
   transition: 0.6s;
+  width: 100%;
 }
 .first-img .img-hover img:hover {
   transform: scale(1.1);
@@ -1336,7 +1430,6 @@ footer {
   flex-direction: row;
 }
 .row_blog .col-4-blog {
-  border-left: 1px solid rgb(163, 163, 163);
   padding-left: 90px;
 }
 
@@ -1447,9 +1540,12 @@ footer {
   font-family: "Montserrat";
 }
 
+.sect1-contact {
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-title-page-02.jpg);
+  width: 100%;
+  height: 90vh;
+}
 .sect2_contact {
-  background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
-  background-repeat: repeat;
   padding-top: 130px;
 }
 .sect2_contact .map {
@@ -1457,14 +1553,6 @@ footer {
 }
 .sect2_contact .map iframe {
   width: 100%;
-}
-.sect2_contact .iframe-hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
 }
 
 .sect3_contact {
