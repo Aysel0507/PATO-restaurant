@@ -1,146 +1,45 @@
 header{
-    background-image: url("/Holiday-task/assets/images/slide1-01.jpg.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    left: 0px;
-    top: 0px;
-    transition: opacity 500ms ease 0s;
-    position: relative;
-
-    .chevronsForPagination {
-        z-index: 2;
-        @include display-flex(space-between, center);
-        position: absolute;
-        top: 300px;
-        gap: 1150px;
-        color: $primary-color;
-        .fa-chevron-left{
-            @include display-flex(center,center);
-            margin-left:60px;
-            font-size:30px;
-            background-color:$secondary-color;
-            border-radius: 50%;
-    }
-        .fa-chevron-right{
-            @include display-flex(center,center);
-            margin-right:60px;
-            font-size:30px;
-            background-color:$secondary-color;
-            border-radius: 50%;
-    }
-}
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    border-top: 3px solid red;
+    background-color: white;
 }
 
+.navbar{
+    height:80px;
+    color: $primary-color;
+    @include display-flex(space-between,center);
+}
 
-.header {
+nav{
+    ul{
+        @include display-flex(center,center);
+        gap:60px;
+        li{
+            a{
+            color:$head-color;
+            font-size: 15px;
+            font-family: $font-family3;
+            transition: .6s;
+            &:hover{
+                color:$red-color;
+            }
+            }
+        
+        }
+    }
+}
+
+.social_icons{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: transparent;
-    padding-top: 20px;
-}
-
-.menu {
-    .main_menu {
-        width: 100%;
-    }
-
-    ul {
-        li {
-            display: inline-block;
-            padding: 18px;
-
-        }
-    }
-}
-
-.menu {
-    ul {
-        li {
-            a {
-                color: $primary-color;
-                font-size: 13px;
-                font-family: $font-family1;
-
-
-            }
-        }
-    }
-}
-
-.social_media {
-    a {
-        i {
-            color: $primary-color;
-            padding: 10px;
-            font-size: 20px;
-        }
-    }
-}
-
-.hero {
-    @include display-flex(center, center);
-    flex-direction: column;
-    margin-top: 180px;
-
-}
-
-
-.welcome_ {
-    font-size: 40px;
-    font-family: $font-family2;
-    color: $primary-color;
-}
-
-.Pato {
-    font-size: 80px;
-    font-family: $font-family1;
-    color: $primary-color;
-}
-
-.button {
-    @extend %primary-btn;
-    margin: 100px auto;
-    a {
-        @include display-flex(center, center);
-        margin-top: 10px;
-        color: $red-color;
-    }
-    &:hover {
-        color:$primary-color;
-        background-color: $red-color;
-    }
-}
-
-.circle_btns {
-
-
-
-    ul {
-        @include display-flex(center, center);
-        gap:5px;
-        cursor: pointer;
-
-        li {
-            i {
-                border-radius: 50%;
-                width: 10px;
-                height: 10px;
-                color: transparent;
-                background-color: #958e88;
-                &:hover{
-                    background-color: $red-color;
-                    border: 1px solid $primary-color;
-                }
-
-            }
-
-
-
+    gap:20px;
+    a{
+        color: $head-color;
+        font-size: 14px;
+        transition: .4s;
+        &:hover{
+            color:$red-color;
         }
     }
 }
