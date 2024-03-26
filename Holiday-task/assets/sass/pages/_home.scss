@@ -472,6 +472,9 @@
     @include display-flex(center, center);
     flex-direction: row;
     gap: 20px;
+    @include lg {
+        flex-direction: column;
+    }
 
     span {
         font-size: 22px;

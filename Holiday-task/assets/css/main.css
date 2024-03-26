@@ -209,6 +209,11 @@ nav ul {
   align-items: center;
   gap: 60px;
 }
+@media only screen and (max-width: 992px) {
+  nav ul {
+    display: none;
+  }
+}
 nav ul li a {
   color: #222222;
   font-size: 14px;
@@ -236,7 +241,12 @@ footer {
   background-color: #222222;
 }
 footer .st_footer {
-  height: 400px;
+  padding: 50px 0px;
+}
+@media only screen and (max-width: 1200px) {
+  footer .container {
+    width: 95%;
+  }
 }
 
 .row-footer {
@@ -244,6 +254,7 @@ footer .st_footer {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .footer_ .twit2 {
@@ -789,6 +800,11 @@ footer .st_footer {
   flex-direction: row;
   gap: 20px;
 }
+@media only screen and (max-width: 992px) {
+  .special {
+    flex-direction: column;
+  }
+}
 .special span {
   font-size: 22px;
   font-family: "Poppins";
@@ -1116,6 +1132,15 @@ footer .st_footer {
 }
 .gallery_btn {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media only screen and (max-width: 576px) {
+  .gallery_btn {
+    flex-direction: column;
+  }
 }
 .gallery_btn button {
   color: black;
@@ -1151,13 +1176,22 @@ footer .st_footer {
   align-items: center;
   flex-direction: row;
 }
+@media only screen and (max-width: 768px) {
+  .row-g {
+    flex-wrap: wrap;
+  }
+}
 
 .col-4-g {
   overflow: hidden;
+  padding: 20px;
+}
+@media only screen and (max-width: 768px) {
+  .col-4-g {
+    width: 70%;
+  }
 }
 .col-4-g img {
-  width: 330px;
-  height: 250px;
   border-radius: 10px;
   transition: 0.4s;
 }
@@ -1219,6 +1253,8 @@ footer .st_footer {
   color: #666666;
   font-size: 15px;
   line-height: 1.4;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .sect3_about {

@@ -24,6 +24,9 @@ nav{
     ul{
         @include display-flex(center,center);
         gap:60px;
+        @include lg{
+            display: none;
+        }
         li{
             a{
             color:$head-color;

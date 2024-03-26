@@ -11,6 +11,13 @@
 
 .gallery_btn{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    @include sm {
+        flex-direction: column;
+    }
     button{
     &:first-child{
         background-color: $secondary-color;
@@ -42,12 +49,20 @@
     padding-top: 20px;
     @include display-flex(space-around,center);
     flex-direction: row;
+
+    @include md {
+        flex-wrap: wrap;
+    }
 }
 .col-4-g{
     overflow: hidden;
+    padding: 20px;
+    @include md {
+        width: 70%;
+    }
     img{
-        width: 330px;
-        height: 250px;
+        // width: 330px;
+        // height: 250px;
         border-radius: 10px;
         transition: .4s;
         &:hover{

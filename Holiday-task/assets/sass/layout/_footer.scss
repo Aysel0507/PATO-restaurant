@@ -1,12 +1,19 @@
 footer {
     background-color:#222222;
     .st_footer{
-        height: 400px;
+        // height: 400px;
+        padding: 50px 0px;
+    }
+    .container {
+        @include xl {
+            width: 95%;
+        }
     }
 }
 .row-footer{
     @include display-flex(space-between,center);
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .footer_{
