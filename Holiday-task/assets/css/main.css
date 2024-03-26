@@ -235,6 +235,9 @@ nav ul li a:hover {
 footer {
   background-color: #222222;
 }
+footer .st_footer {
+  height: 400px;
+}
 
 .row-footer {
   display: flex;
@@ -247,23 +250,30 @@ footer {
   padding-top: 30px;
 }
 .footer_ div span {
-  color: #666666;
-  font-size: 9px;
+  color: white;
+  font-size: 10px;
   font-family: "Poppins";
 }
-.footer_ div p {
+.footer_ div .time {
   font-size: 10px;
+  font-family: "Poppins";
+  color: #666666;
+  border: none;
+}
+.footer_ div p {
+  font-size: 12px;
   line-height: 1.7;
   font-family: "Poppins";
   color: #666666;
 }
 .footer_ div a {
-  font-size: 8px;
+  font-size: 10px;
   color: #ec1d25;
   font-family: "Poppins";
 }
 .footer_ h4 {
-  font-size: 13px;
+  font-size: 15px;
+  letter-spacing: 2px;
   font-weight: 500;
   font-family: "Poppins";
   color: white;
@@ -272,7 +282,7 @@ footer {
 .footer_ ul li {
   color: #999999;
   line-height: 2.5;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .end_footer {
@@ -301,12 +311,28 @@ footer {
   font-family: "Poppins";
 }
 .end_footer .end .footer_right a {
-  font-size: 10px;
+  font-size: 12px;
   color: rgb(179, 178, 178);
   transition: 0.4s;
 }
 .end_footer .end .footer_right a:hover {
   color: #ec1d25;
+}
+
+.col-3-f {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer_ {
+  padding-top: 20px;
+}
+.footer_ img {
+  width: 70px;
+  height: 60px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .sect1 {
@@ -377,27 +403,6 @@ footer {
 .circle_btns ul li i:hover {
   background-color: #ec1d25;
   border: 1px solid white;
-}
-
-.chevronsForPagination {
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  top: 300px;
-  gap: 1000px;
-  color: white;
-}
-.chevronsForPagination .fa-chevron-left {
-  padding-left: 10px;
-  font-size: 30px;
-  border-radius: 50%;
-}
-.chevronsForPagination .fa-chevron-right {
-  padding-right: 80px;
-  font-size: 30px;
-  border-radius: 50%;
 }
 
 .row-italian {
@@ -592,6 +597,13 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.row-7 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
 
 .over_parag {
