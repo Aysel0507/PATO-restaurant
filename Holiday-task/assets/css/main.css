@@ -143,7 +143,7 @@ body {
   width: 80%;
 }
 
-.background-image, .sect2_contact, .sect4_abouttt, .sect2_about, .sect11, .sect7, .sect2 {
+.background-image, .sect2_contact, .sect4_abouttt, .sect2_about, .sect5, .sect11, .sect7, .sect2 {
   background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
   background-repeat: repeat;
 }
@@ -569,7 +569,6 @@ footer .st_footer {
   background-image: url(/Holiday-task/assets/images/bg-event-02.jpg.webp);
   padding-top: 140px;
   padding-bottom: 170px;
-  margin-top: 200px;
 }
 
 .upcoming {
@@ -732,7 +731,7 @@ footer .st_footer {
   overflow: hidden;
 }
 .right .image_book_table img {
-  width: 100%;
+  width: 400px;
   height: 400px;
   border-radius: 10px;
   transition: 0.4s;
@@ -895,6 +894,110 @@ footer .st_footer {
   margin-top: 180px;
   padding-top: 100px;
   padding-bottom: 120px;
+}
+
+.sect5 {
+  margin-top: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.sect5 .our_menu {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.sect5 .our_menu h4 {
+  color: #ec1d25;
+  font-family: "Courgette";
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+.sect5 .our_menu h3 {
+  font-size: 57px;
+  font-family: "Poppins";
+  letter-spacing: 3px;
+  color: #222222;
+  font-weight: 600;
+  word-spacing: 4px;
+}
+.sect5 .div1 {
+  overflow: hidden;
+}
+.sect5 .div2 {
+  overflow: hidden;
+}
+.sect5 .div3 {
+  overflow: hidden;
+}
+.sect5 .div4 {
+  overflow: hidden;
+}
+.sect5 .div5 {
+  overflow: hidden;
+}
+.sect5 .div6 {
+  overflow: hidden;
+}
+.sect5 img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+.sect5 img:hover {
+  transform: scale(1.1);
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+}
+.parent * {
+  position: relative;
+}
+.parent .cls {
+  text-align: center;
+  padding-top: 15px;
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.9;
+  width: 200px;
+  height: 60px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 22px;
+  color: #333333;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.div1 {
+  grid-area: 1/1/5/3;
+}
+
+.div2 {
+  grid-area: 1/3/5/5;
+}
+
+.div3 {
+  grid-area: 1/5/3/7;
+}
+
+.div4 {
+  grid-area: 3/5/5/7;
+}
+
+.div5 {
+  grid-area: 5/5/7/7;
+}
+
+.div6 {
+  grid-area: 5/1/7/5;
 }
 
 .sect1_menu {
