@@ -6,6 +6,9 @@
     h1{
         @extend .page_header;
     }
+    @include md {
+        height: 70vh;
+    }
 }
 
 .sect2_contact{
@@ -18,13 +21,9 @@
         }
 
     }
-    // .iframe-hover{
-    //     height: 100%;
-    //     width: 100%;
-    //     position: absolute;
-    //     top: 0px;
-    //     left: 0px;
-    // }
+    @include md {
+        padding-top: 100px;
+    }
     
 }
 .sect3_contact{
@@ -48,6 +47,13 @@
     gap:50px;
     padding-top: 80px;
     padding-bottom: 40px;
+
+    // @include md {
+    //     @include display-flex(column, center);
+    //     gap: 20px;
+    //     padding-top: 50px;
+    //     padding-bottom: 30px;
+    // }
     .cont{
         border-radius: 10px;
         span{
@@ -86,6 +92,14 @@
 }
 .row-contact{
     @include display-flex(space-between,center);
+    @include md{
+        display: flex;
+        flex-direction: column;
+    }
+    @include lg{
+        display: flex;
+        flex-direction: column;
+    }
 
     .col-4_contact{
         padding-top: 100px;

@@ -5,6 +5,9 @@
     height: 90vh;
     h1{
         @extend .page_header;
+        @include md {
+            font-size: 30px; 
+          }
     }
    
 }
@@ -50,7 +53,15 @@
     @extend .background-image-functions;
     padding-top: 180px;
     padding-bottom:220px;
-    background-attachment: fixed;    
+    background-attachment: fixed;  
+    @include md {
+        padding-top: 120px; 
+        padding-bottom: 180px; 
+      }  
+      @include sm {
+        padding-top: 80px; // Adjust padding for mobile devices
+        padding-bottom: 120px; // Adjust padding for mobile devices
+      }
 }
 
 .video_about{
@@ -87,7 +98,13 @@
     .row-aboutt{
         @include display-flex(space-around,center);
         flex-direction: row;
+        
+
+        @include md {
+            flex-direction: column;
+          }
     }
+    
 }
 
 .about{

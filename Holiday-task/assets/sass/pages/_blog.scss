@@ -113,6 +113,10 @@
         // border-left: 1px solid rgb(163, 163, 163);
         padding-left:90px;
     }
+    @include md {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .right-blog{

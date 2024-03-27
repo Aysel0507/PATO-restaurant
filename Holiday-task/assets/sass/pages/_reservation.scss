@@ -6,11 +6,22 @@
     h1{
         @extend .page_header;
     }
+    @include md {
+        h1 {
+            font-size: 28px; 
+        }
+    }
+    @include lg {
+        h1 {
+            font-size: 32px;
+        }
+    }
 }
 
 .sect2_reserv{
     background-image: url(/Holiday-task/assets/images/pattern1.png.webp);
     background-repeat: repeat;
+    
 }
 
 

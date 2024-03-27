@@ -77,8 +77,16 @@
     @include display-flex(center,center);
     flex-direction: row;
     gap:70px;
+    @include md{
+        display: flex;
+        flex-direction: column;
+    }
     padding-top: 160px;
     padding-bottom: 150px;
+    @include md {
+        padding-top: 150px;
+        gap: 40px;
+      }
 
 }
 
@@ -122,6 +130,10 @@
 .sec2_2 {
     overflow: hidden;
     img {
+        @include md{
+            width: 100%;
+            height: 100%;
+        }
         width: 400px;
         height: 400px;
         transition: all 0.6s;
@@ -175,6 +187,10 @@
     }
     @include display-flex(center,center);
     flex-direction: row;
+    @include md{
+        display: flex;
+        flex-direction: column;
+    }
     gap:50px;
     margin-top: 100px;
     h5{
@@ -283,6 +299,10 @@
 .row-7{
     @include display-flex(space-around,center);
     flex-direction: row;
+    @include md{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .over_parag{
@@ -317,6 +337,10 @@
 .row-book{
     @include display-flex(space-around,center);
     flex-direction: row;
+    @include md{
+        display: flex;
+        flex-direction: column;
+    }
 }
 .sec7{
     padding-bottom: 100px;
@@ -361,6 +385,10 @@
     .image_book_table {
         overflow: hidden;
         img {
+            @include md{
+                width: 100%;
+                height: 100%;
+            }
             width: 100%;
             height:400px;
             border-radius: 10px;
